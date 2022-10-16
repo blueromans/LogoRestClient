@@ -1,10 +1,10 @@
 # LogoRestClient PyPackage
 
-## Requirements
+LogoRestClient is a Python library for accessing logo rest.
 
-* [Python ^3.6.4](https://www.python.org/downloads/release/python-380)
+## Installation
 
-## Setup
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
 pip install LogoRestClient
@@ -12,10 +12,10 @@ pip install LogoRestClient
 
 ## Usage
 
-### Credentials
+```python
+from logorestclient import LogoService
 
-```bash
-{
+credentials {
   'LOGO_REST_API': 'api url', 
   'LOGO_USER_NAME': 'username', 
   'LOGO_USER_PASSWORD': 'password',
@@ -24,11 +24,14 @@ pip install LogoRestClient
   'LOGO_CLIENT_NUMBER': 'client number',
   'LOGO_CLIENT_SECRET': 'client secret'
 }
-```
-### Initialize
-
-```bash
-from logorestclient import LogoService
 logo_service = LogoService(credentials)
+# returns 'query result'
 result = logo_service.runQuery('sql_query') 
+
 ```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
