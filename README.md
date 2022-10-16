@@ -15,7 +15,7 @@ pip install LogoRestClient
 ```python
 from logorestclient import LogoService
 
-credentials {
+credentials = {
   'LOGO_REST_API': 'api url', 
   'LOGO_USER_NAME': 'username', 
   'LOGO_USER_PASSWORD': 'password',
