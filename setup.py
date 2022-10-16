@@ -5,14 +5,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='LogoRestClient',
-    version="0.0.1",
+    version="0.0.2",
     author="Yaşar Özyurt",
     author_email="blueromans@gmail.com",
     description='Logo Rest Client Python package',
     long_description='Logo Rest Client Python package',
-    url='https://github.com/BufiCoresite/LogoRest.git',
+    url='https://github.com/blueromans/Logo-Rest-Client.git',
     project_urls={
-        "Bug Tracker": "https://github.com/BufiCoresite/LogoRest/issues",
+        "Bug Tracker": "https://github.com/blueromans/Logo-Rest-Client/issues",
     },
     install_requires=['requests'],
     classifiers=[
