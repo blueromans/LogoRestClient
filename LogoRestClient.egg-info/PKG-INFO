@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: LogoRestClient
-Version: 0.0.4
+Version: 0.0.5
 Summary: Logo Rest Client Python package
 Home-page: https://github.com/blueromans/Logo-Rest-Client.git
 Author: Yaşar Özyurt
@@ -30,23 +30,23 @@ pip install LogoRestClient
 ```python
 from logorestclient import LogoService
 
-credentials {
-  'LOGO_REST_API': 'api url', 
-  'LOGO_USER_NAME': 'username', 
-  'LOGO_USER_PASSWORD': 'password',
-  'LOGO_GRANT_TYPE': 'grant type', 
-  'LOGO_CLIENT_ID': 'client id', 
-  'LOGO_CLIENT_NUMBER': 'client number',
-  'LOGO_CLIENT_SECRET': 'client secret'
+credentials = {
+    'GRANT_TYPE': 'grant type',
+    'USER_NAME': 'username',
+    'CLIENT_NUMBER': 'client number',
+    'PASSWORD': 'password',
+    'REST_URL': 'rest url',
 }
 logo_service = LogoService(credentials)
 # returns 'query result'
-result = logo_service.runQuery('sql_query') 
+result = logo_service.runQuery('sql_query')
 
 ```
 
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)

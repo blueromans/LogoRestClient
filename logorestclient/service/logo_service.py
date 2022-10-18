@@ -1,16 +1,18 @@
 from logorestclient.exceptions import LogoException
-from logorestclient.helper.token import update_token
 from logorestclient.service.token_service import TokenService
 
 
 class LogoService(TokenService):
     def __init__(self, credentials):
         if credentials is None:
-            raise LogoException("Settings required!")
-        payload = {'grant_type': credentials['LOGO_GRANT_TYPE'], 'username': credentials['LOGO_USER_NAME'],
-                   'firmno': credentials['LOGO_CLIENT_NUMBER'],
-                   'password': credentials['LOGO_USER_PASSWORD']}
-        super().__init__(credentials['LOGO_REST_API'], **payload)
+            raise LogoException("Credentials required!")
+        payload = {
+            'grant_type': credentials['GRANT_TYPE'],
+            'username': credentials['USER_NAME'],
+            'firmno': credentials['CLIENT_NUMBER'],
+            'password': credentials['PASSWORD']
+        }
+        super().__init__(credentials['REST_URL'], **payload)
         token = self.token_dict['access_token']
         self.headers = {
             'Authorization': f'Bearer {token}',
@@ -27,7 +29,6 @@ class LogoService(TokenService):
                 raise LogoException(res['ModelState']['207'])
             if 'LoginError' in res['ModelState']:
                 token_dict = self.retrieve_access_token()
-                update_token(token_dict)
                 self.token_dict = token_dict
                 return self.runQuery(query)
         if 'count' in res and res['count'] == 0 or len(res['items']) == 0:
