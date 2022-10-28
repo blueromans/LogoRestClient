@@ -17,3 +17,7 @@ htmlcov/
 .coverage
 .coverage.*
 *,cover
+dist
+dist/*
+LogoRestClient.egg-info
+LogoRestClient.egg-info/*
