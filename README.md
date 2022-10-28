@@ -1,6 +1,6 @@
 # LogoRestClient PyPackage
 
-LogoRestClient is a Python library for accessing logo rest.
+Logo is the most popular Erp desktop application at Turkey. LogoRestClient is a Python library to access logo rest services quickly.
 
 ## Installation
 
