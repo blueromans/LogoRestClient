@@ -12,9 +12,9 @@ setuptools.setup(
     description='Logo Rest Client Python package',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/blueromans/Logo-Rest-Client.git',
+    url='https://github.com/blueromans/LogoRestClient.git',
     project_urls={
-        "Bug Tracker": "https://github.com/blueromans/Logo-Rest-Client/issues",
+        "Bug Tracker": "https://github.com/blueromans/LogoRestClient/issues",
     },
     install_requires=['requests'],
     classifiers=[
