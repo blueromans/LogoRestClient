@@ -21,3 +21,4 @@ dist
 dist/*
 LogoRestClient.egg-info
 LogoRestClient.egg-info/*
+rebuild.sh
