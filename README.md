@@ -1,3 +1,4 @@
+[![PyPI version](https://img.shields.io/pypi/v/LogoRestClient.svg)](https://pypi.python.org/pypi/LogoRestClient)
 # LogoRestClient PyPackage
 
 Logo is the most popular Erp desktop application at Turkey. LogoRestClient is a Python library to access logo rest services quickly.
